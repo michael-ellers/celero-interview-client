@@ -19,7 +19,7 @@ export const Header = ()=> {
     <div className='header'>
         <FlexBetween>
             <Menu className='header-icon' aria-label='menu' onClick={handleMenuClick}></Menu>
-            <img src={logo} alt='logo' className='header-logo' />
+            <h1>Celero</h1>
             <Search className='header-icon' aria-label='search' onClick={handleSearchClick}></Search>
         </FlexBetween>
         <h1 className='header-title'>Cool New Celero Mobile App</h1>
