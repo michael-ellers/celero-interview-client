@@ -4,8 +4,12 @@ import './index.css';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import App from './App';
 
+
+
+const baseUrl = process.env.REACT_APP_BASE_URL;
+
 const client = new ApolloClient({
-    uri: 'http://localhost:5000/graphql?',
+    uri: baseUrl,
     cache: new InMemoryCache(),
 });
 
